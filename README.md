@@ -22,3 +22,11 @@ Ir al directorio `server` y ejectuar `yarn` para instalar todas las dependencias
 Una vez instalado todo, simplemente ejecutar:
 
 `yarn test`
+
+### Comentarios adicionales
+El proyecto es sumamente simple, por lo tanto no se uso ninguna arquitecutura pensando en escalar suficiente.
+
+* Hay tests para todo el código en server, obviamente no se testeas librerias, como sequelize.
+* No hay tests en frontend
+* Se había pensado en un servicio más completo, pero por cosas de tiempo este debería bastar. (Tiene más rutas de las requeridas).
+* Si bien todo está escrito en Javascript, tengo una inclinación en usar Typescript, que es básicamente Javascript en esteroides, con tipado fuerte, uso de interface, entre otros.
