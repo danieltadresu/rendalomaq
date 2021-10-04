@@ -1,0 +1,34 @@
+version: '3'
+services:
+  postgres:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=rendalomaq
+      - POSTGRES_PASSWORD=rendalomaq
+      - POSTGRES_DB=rendalomaq
+    volumes:
+      - database:/var/lib/postgresql-rm/data/
+  server:
+    container_name: server
+    build: ./server
+    ports:
+      - '8000:8000'
+    depends_on:
+      - postgres
+    volumes:
+      - ./server/src:/workspace/src
+    command: yarn serve
+  web:
+    container_name: web
+    build: ./web
+    ports:
+      - '3000:3000'
+    depends_on:
+      - server
+    volumes:
+      - ./web/src:/workspace/src
+    command: yarn start
+volumes:
+  database:
