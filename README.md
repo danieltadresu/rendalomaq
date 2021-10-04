@@ -18,3 +18,9 @@ Se debe ingresar en una consola y pararse en la raíz de este repositorio, luego
 `docker-compose up`
 
 Docker compose se encarga de levantar todo lo necesario. Luego en el navegador, ingresar la dirección `http://localhost:3000`.
+
+### Como correr la suite de tests
+Ir al directorio `server` y ejectuar `yarn` para instalar todas las dependencias necesarias del proyecto.
+Una vez instalado todo, simplemente ejecutar:
+
+`yarn test`
