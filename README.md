@@ -1,7 +1,5 @@
 # RendaloMaq Engineering Teams
 
----
-
 ### Server
 Por el lado del backend, hay una aplicación en [NodeJs](https://nodejs.org/) con [ExpressJs](https://expressjs.com/) y 
 [Sequelize](https://sequelize.org/) para el uso de base de datos (PostgreSQL). Esta escrito en Javascript.
